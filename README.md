@@ -1,5 +1,3 @@
-# Rangkuman 33 Video Youtube
-
 # RANGKUMAN PLAYLIST DJANGO
 Django merupakan salah satu web framework yang menggunakan bahasa pemrograman python, django berbasis MVT adalah kependekan dari Model, View, dan Template. Pengertian Web framework adalah sebuah tools yang berguna untuk memudahkan programmer ketika membuat aplikasi berbasis web.
 
@@ -22,17 +20,23 @@ server, dll
 3. Web Browser Untuk menampilkan Aplikasi web yang telah dibuat
 4. Install Python
 5. PIP adalah sebuah tool yang akan kita gunakan untuk manajemen paket python. Termasuk juga menginstall Django.
-![Screenshot (249)](https://user-images.githubusercontent.com/92989089/169078601-f51d42e6-070f-4c0f-892f-a4e75b8980ce.png)
- 
+
 
 ## MEMBUAT PROJECT APLIKASI PERPUSTAKAAN
 1. cd Desktop / #Untuk menyimpan Project di Halaman Desktop
 2. Django-admin startproject perpus #Perintah ini untuk membuat Project baru Bernama Perpus
+![image](https://user-images.githubusercontent.com/92989089/169647908-59b04c07-9d66-49e8-a7db-3de2d2ba1628.png)
+
+
 3. Didalam Folder Project Perpus terdapat :
   -Manage.py #Ini adalah file Perintah untuk berinteraksi dengan Project Django
   - __init__.py #Untuk memberitahukan Python bahwa Perpus adalah sebuah Package
   - Setting.py #Berisikan File Konfigurasi / Pengaturan seperti Konfigurasi Template, Database, dll
+  ![image](https://user-images.githubusercontent.com/92989089/169647410-23d6da91-8719-4fdf-8368-4b908ebe9cf6.png)
+
   - Urls.py #Berisikan pola – pola URL
+  ![image](https://user-images.githubusercontent.com/92989089/169647517-31fc07b1-3e6a-4e7f-8037-c552271fe2e7.png)
+
   - Wsgi.py #Untuk development Project yang melibatkan Web server yang kompetibel dengan Wsgi / Mengonline-kan Project
 4. Python manage.py runserver #Untuk menjalankan Project dan mendapatkan alamat Project Django yang akan dibuat
 
@@ -45,6 +49,8 @@ PAGE NOT FOUND. Karena URL Buku yang di Request belum ada di Server.
 ## Membuat Apps
 Apps adalah sebuah aplikasi pada Django yang mempunyai Model Database, View, Template, dan URLCons. Setiap Project di Django mempunyai Apps dan bisa lebih dari satu
 Apps
+![image](https://user-images.githubusercontent.com/92989089/169647934-72141109-45b5-49f1-bf63-2a2be29ebbb6.png)
+
 
 ## Membuat Views
 Alur yang digunakan untuk membuat Views ini adalah Client, URLConf, View dan memberikan Response kepada Client. Views diciptakan untuk memenuhi Request dari Client. 
@@ -54,13 +60,16 @@ Alur yang digunakan untuk membuat Views ini adalah Client, URLConf, View dan mem
 2. Pada bagian Settings.py Line 58. Tambahkan ‘DIRS’ : [‘template’]
 3. Buat Folder templates satu Level dengan settings, lalu buiat buku.html
 4. Membuat HTML sederhana 
+![image](https://user-images.githubusercontent.com/92989089/169647708-213624a0-f79f-4e96-bc78-1812543b00fd.png)
 
 ## Template Extending
-Pada tahap ini, kita akan membuat Base Template / Template dasar untuk semua Halaman.
+1. Pada tahap ini, kita akan membuat Base Template / Template dasar untuk semua Halaman.
 2. Template utama yang isinya Base.html adalah file html utama yang akan menampung
 konten – konten dari Template Apps
 3. Didalam Apps akan dibuat folder template yang isinya hanya bagian – bagian konten
 4. Bagian Konten akan diextend / dimasukkan kedalam Base.html
+![image](https://user-images.githubusercontent.com/92989089/169647644-a87802a6-7eae-43b8-9e98-b83fcc720978.png)
+
 
 ## Static File
 Static File adalah kumpulan File CSS, Java Script, dan gambar. Static File ini digunakan untuk mempercantik / memperindah tampilan Aplikasi yang dibuat dan memerikan pengalaman kenyamanan saat Aplikasi digunakan.
